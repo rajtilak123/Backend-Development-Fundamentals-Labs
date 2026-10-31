@@ -63,17 +63,20 @@ Open `http://localhost:3000` in your browser.
 
 ## Screenshots
 
+### Code 
+![Code](SCREENSHOTS/CODE.png)
+
 ### Home Route
-![Home Route](SCREENSHOTS/home.png)
+![Home Route](SCREENSHOTS/HOME.png)
 
 ### About Route
-![About Route](SCREENSHOTS/about.png)
+![About Route](SCREENSHOTS/ABOUT.png)
 
 ### Time Route
-![Time Route](SCREENSHOTS/time.png)
+![Time Route](SCREENSHOTS/TIME.png)
 
 ### 404 Error
-![404 Error](SCREENSHOTS/not-found.png)
+![404 Error](SCREENSHOTS/ERROR.png)
 
 ## Notes: Problems Faced and How They Were Solved
 
