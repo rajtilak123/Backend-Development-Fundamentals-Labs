@@ -6,7 +6,7 @@
 
 ## Live Link
 
-Pending deployment.
+[Lab 2 - Live Deployment](https://backend-development-fundamentals-lab2.onrender.com)
 
 ## Objective
 
