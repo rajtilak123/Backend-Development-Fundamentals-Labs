@@ -17,10 +17,6 @@ const initializeDBAndServer = async () => {
       filename: dbPath,
       driver: sqlite3.Database,
     })
-
-    app.listen(3000, () => {
-      console.log('Server Running at http://localhost:3000/')
-    })
   } catch (e) {
     console.log(`DB Error: ${e.message}`)
     process.exit(1)
@@ -102,6 +98,12 @@ app.delete('/books/:bookId/', async (request, response) => {
   await db.run(deleteBookQuery, [bookId])
 
   response.send('Book Removed')
+})
+
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server Running at http://localhost:${PORT}/`)
 })
 
 module.exports = app
