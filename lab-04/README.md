@@ -62,36 +62,27 @@ port `3000` by default.
 The JWT secret is currently defined as a constant in `app.js`, as
 required for this lab exercise. It should not be shared publicly.
 
+
 ## Database Structure
 
 **Database:** `users.db`
 
 **Table:** `user`
 
-  Column     Data Type     Description
-  ---------- ------------- -----------------------------
-  username   TEXT UNIQUE   Unique username of the user
-  name       TEXT          Name of the user
-  password   TEXT          Hashed password
+| Column | Data Type | Description |
+|---|---|---|
+| username | TEXT UNIQUE | Unique username of the user |
+| name | TEXT | Name of the user |
+| password | TEXT | Hashed password |
 
 Passwords are stored as bcrypt hashes, not as plain text.
 
 ## API Endpoints
 
-  -----------------------------------------------------------------------
-  Method                  Endpoint                Description
-  ----------------------- ----------------------- -----------------------
-  POST                    `/register/`            Registers a new user
-                                                  after checking whether
-                                                  the username already
-                                                  exists and hashing the
-                                                  password
-
-  POST                    `/login/`               Checks the username and
-                                                  password, then returns
-                                                  a JWT token after
-                                                  successful login
-  -----------------------------------------------------------------------
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/register/` | Registers a new user after checking whether the username already exists and hashing the password |
+| POST | `/login/` | Checks the username and password, then returns a JWT token after successful login |
 
 ## Screenshots
 
